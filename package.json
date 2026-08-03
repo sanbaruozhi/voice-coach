@@ -1,0 +1,15 @@
+{
+  "name": "voice-coach",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/mobile",
+    "apps/ai-service"
+  ],
+  "scripts": {
+    "dev:mobile": "npm --workspace apps/mobile run start",
+    "dev:ai": "npm --workspace apps/ai-service run dev",
+    "typecheck": "npm --workspace apps/mobile run typecheck && npm --workspace apps/ai-service run typecheck",
+    "test:rules": "npm --workspace apps/mobile run test:rules"
+  }
+}

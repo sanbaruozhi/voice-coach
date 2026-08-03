@@ -1,0 +1,21 @@
+name: Privacy scan
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  privacy-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Scan tracked files
+        env:
+          PRIVACY_DENY_TERMS: ${{ secrets.PRIVACY_DENY_TERMS }}
+        run: python3 scripts/privacy_scan.py
