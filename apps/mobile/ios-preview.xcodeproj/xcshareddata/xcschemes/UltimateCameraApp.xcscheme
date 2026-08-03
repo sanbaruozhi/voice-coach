@@ -18,7 +18,7 @@
                BlueprintIdentifier = "01E000000000000000000001"
                BuildableName = "UltimateCameraApp.app"
                BlueprintName = "UltimateCameraApp"
-               ReferencedContainer = "container:UltimateCameraApp.xcodeproj">
+               ReferencedContainer = "container:ios-preview.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,7 +46,7 @@
             BlueprintIdentifier = "01E000000000000000000001"
             BuildableName = "UltimateCameraApp.app"
             BlueprintName = "UltimateCameraApp"
-            ReferencedContainer = "container:UltimateCameraApp.xcodeproj">
+            ReferencedContainer = "container:ios-preview.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -63,7 +63,7 @@
             BlueprintIdentifier = "01E000000000000000000001"
             BuildableName = "UltimateCameraApp.app"
             BlueprintName = "UltimateCameraApp"
-            ReferencedContainer = "container:UltimateCameraApp.xcodeproj">
+            ReferencedContainer = "container:ios-preview.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
