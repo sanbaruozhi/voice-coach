@@ -34,3 +34,24 @@ Secrets.xcconfig
 *.keystore
 .secrets/
 private-config/
+
+# Private runtime data and machine credentials
+.npmrc
+.pypirc
+.netrc
+credentials.json
+credentials.*.json
+service-account*.json
+google-services.json
+GoogleService-Info.plist
+*.sqlite
+*.sqlite3
+*.db
+*.db-*
+*.realm
+recordings/
+exports/
+diagnostics/
+logs/
+__pycache__/
+*.pyc

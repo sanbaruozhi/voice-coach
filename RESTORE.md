@@ -1,10 +1,14 @@
 # Restore on another machine
 
 1. Sign in to the GitHub account that can access this repository and clone it.
-2. Run `python3 scripts/privacy_scan.py` to verify the checkout.
-3. Follow the project `README.md` to install its documented toolchain and
+2. Run `./scripts/setup_privacy_guard.sh`. This sets a repository-local GitHub
+   noreply identity and enables the tracked pre-commit privacy check; it does
+   not change the global Git identity on the machine.
+3. Run `python3 scripts/privacy_scan.py --history --check-local-identity` to
+   verify the checkout before editing or publishing it.
+4. Follow the project `README.md` to install its documented toolchain and
    dependencies.
-4. Supply credentials through environment variables, the operating-system
+5. Supply credentials through environment variables, the operating-system
    keychain, or ignored local configuration files. Never commit them.
 
 For Apple projects, the repository intentionally does not contain a personal
